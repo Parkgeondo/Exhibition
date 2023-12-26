@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="preview">
+      <div class="title">
+        <div class="name"></div>
+        <div class="Dname"></div>
+      </div>
+    </div>
+    <div class="background">
+    <!-- 여기에 별자리를 그리는 부분 -->
+        <div class="Constellation"><main></main>
+          <div class="tooltip">
+            <div class="tooltip1"></div>
+            <div class="tooltip2">별자리의 다른 작품들도 구경해보세요!</div>
+          </div>
+          <div class="Conimg"></div>
+          <p class="Conname">운전 경험 디자인<span>별자리</span></p>
+        </div>
+
+    <!-- 작품의 정보를 담는 부분 -->
+        <div class="modal">
+          <div class="contents contents1">
+            <div class="menu">
+              <span class="menu1">background</span>
+              <span class="menu1">Research</span>
+              <span class="menu1">ProjectGoal</span>
+              <span class="menu1">Function</span>
+              <span class="menu1">Video</span>
+              <span class="menu1">Designer</span>
+            </div>
+            <div class="Con-title">sogeun sogeun 
+              <div class="Dname">김현담</div></div>
+            <div class="sub-title">어시스턴트 기능으로 쉽게 하는 <br> 1인 오디오 방송 어플</div>
+            <div class="content">
+              <div class="text"><h4>코로나 시대가 지속되면서 비대면 활동과 SNS을 통한 소통이 증가했습니다.</h4><p>코로나 시대가 지속되면서 비대면 활동이 증가했고 10~20대는 SNS를 통해 활발하게 교류하는 데에 흥미를 두고 있습니다. 또한 유난히 소통 욕구가 높은 Z세대는 소통을 즉각적으로 해결하고자 하며 이에 따라 채팅을 통해 실시간으로 소통하는 방송 앱의 수요가 많아졌습니다. 동시에 오디오 방송이라는 장르도 새롭게 트렌드가 되어가고 있고 소곤소곤은소근소근은 1인 비대면 활동에 초점을 맞춰 1인이 앱 하나로 오디오 방송 운영을 편리하게 하고 즐길 수 있는 것을 목표로 합니다.</p></div>
+              <div class="image1"></div>
+            </div>
+            <div class="video">
+              <h4>Video</h4>
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/1rY6twRCdzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h4>profile</h4>
+            <div class="profile">
+              <div class="image2">
+              </div>
+              <div class="info">
+                <h5>박건도</h5>
+                <p>아이디어가 반짝이는 디자이너가 되도록 노력하겠습니다.</p>
+                <div style="margin-top: auto;">
+                  <h6>Contact</h6>
+                  <div class="Email">wksehs123@naver.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contents contents2">
+            <div class="menu">
+              <span class="menu1">background</span>
+              <span class="menu1">Research</span>
+              <span class="menu1">ProjectGoal</span>
+              <span class="menu1">Function</span>
+              <span class="menu1">Video</span>
+              <span class="menu1">Designer</span>
+            </div>
+            <div class="Con-title">sogeun sogeun 
+              <div class="Dname">김현담</div></div>
+            <div class="sub-title">어시스턴트 기능으로 쉽게 하는 <br> 1인 오디오 방송 어플</div>
+            <div class="content">
+              <div class="text"><h4>코로나 시대가 지속되면서 비대면 활동과 SNS을 통한 소통이 증가했습니다.</h4><p>코로나 시대가 지속되면서 비대면 활동이 증가했고 10~20대는 SNS를 통해 활발하게 교류하는 데에 흥미를 두고 있습니다. 또한 유난히 소통 욕구가 높은 Z세대는 소통을 즉각적으로 해결하고자 하며 이에 따라 채팅을 통해 실시간으로 소통하는 방송 앱의 수요가 많아졌습니다. 동시에 오디오 방송이라는 장르도 새롭게 트렌드가 되어가고 있고 소곤소곤은소근소근은 1인 비대면 활동에 초점을 맞춰 1인이 앱 하나로 오디오 방송 운영을 편리하게 하고 즐길 수 있는 것을 목표로 합니다.</p></div>
+              <div class="image1" style="background-image: url(img/background/background2.jpg)"></div>
+            </div>
+            <div class="video">
+              <h4>Video</h4>
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/1rY6twRCdzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h4>profile</h4>
+            <div class="profile">
+              <div class="image2">
+              </div>
+              <div class="info">
+                <h5>박건도</h5>
+                <p>아이디어가 반짝이는 디자이너가 되도록 노력하겠습니다.</p>
+                <div style="margin-top: auto;">
+                  <h6>Contact</h6>
+                  <div class="Email">wksehs123@naver.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+            <div class="back">
+                <img src="img/system/back.svg" alt="">
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+        
+    </div>
+    <a-scene>
+      <a-camera position="0 2 35">
+        <a-cursor material="color: white"></a-cursor>
+      </a-camera>
+
+
+
+
+      <a-ssets>
+        <a-asset-item id="home"
+                      src="https://cdn.glitch.global/587e16da-998c-4f46-be5a-c8a04010e888/%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4%20VR%20%EC%9D%91%EC%9A%A9final.glb?v=1670959383337">
+        </a-asset-item>
+        <a-asset-item id="ball"
+                      src="https://cdn.glitch.global/a6eec09b-e735-46eb-a218-76165a8a2c6e/%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4%20VR%20%EC%9D%91%EC%9A%A9%20ball.glb?v=1670227809131">
+        </a-asset-item>
+        <a-asset-item id="logo1"
+                      src="https://cdn.glitch.global/544624ce-c1a9-4db8-9edc-30cc39be6b40/%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4%20VR%20%EC%9D%91%EC%9A%A9logo.glb?v=1670343107957">
+        </a-asset-item>
+        <a-asset-item id="logo2"
+                      src="https://cdn.glitch.global/544624ce-c1a9-4db8-9edc-30cc39be6b40/ribbon.glb?v=1670343096769">
+        </a-asset-item>
+        <img id="my-image" src="img/kimchaewon.png">
+      </a-ssets>
+
+
+
+
+<!--       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere> -->
+<!--       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
+<!--       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
+      <a-sky color="#ECECEC"></a-sky>
+      <a-entity gltf-model="#home">
+      </a-entity>
+      <a-entity gltf-model="#ball">
+      </a-entity>
+      <a-entity visible="true" gltf-model="#logo1" id="one" >
+      </a-entity>
+      <a-entity visible="false" gltf-model="#logo2" id="two" animation-mixer="clip: Ribbon;">
+      </a-entity>
+
+      <!-- 하나의 별자리 -->
+      <a-entity rotation="30 0 0" scale="1 1 1">
+          <a-entity id="rotate"
+          animation="property:rotation;
+          to: 0 360 0; dur:250000;
+          easing:linear; loop:true">
+            <!-- 별자리 회전-->
+            <a-entity rotation="30 -30 0" scale="1 1 1">
+              <!-- 별자리 위치-->
+              <a-entity position="0 0 -120.6" scale="1.5 1.5 1.5">
+                  <!-- 별하나에 작품하나 -->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="-2.8 -14.4 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star4" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="0.0" visible="true"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나2 -->
+                  <a-icosahedron color="#FFFFFF" radius="1.0" position="-29 -14.4 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star5" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="0.0" visible="true"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나3 -->
+                  <a-icosahedron color="#FFFFFF" radius="1.1" position="-36 -8 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star2" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="0.0" visible="true"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나4 -->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="-16 -6 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star6" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="0.0" visible="true"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나5 -->
+                  <a-icosahedron color="#FFFFFF" radius="1.0" position="6 -6.4 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star3" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="0.0" visible="true"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나6 -->
+                  <a-icosahedron color="#FFFFFF" radius="1.3" position="-10 2 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star1" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="0.0" visible="true"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나7 -->
+                  <a-icosahedron color="#FFFFFF" radius="1.1" position="-18 14 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star0" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="0.0" visible="true"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나8 -->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="-23 -14 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star7" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="0.0" visible="true"></a-box>
+                  </a-icosahedron>
+
+
+                  <a-entity
+                  line__1="start: -29 -14.4 0; end: -36 -8 0; color: white; opacity:0.3"
+                  line__3="start: -36 -8 0; end: -16 -6 0; color: white; opacity:0.3"
+                  line__4="start: -16 -6 0; end: 6 -6.4 0; color: white; opacity:0.3"
+                  line__5="start: 6 -6.4 0; end: -10 2 0; color: white; opacity:0.3"
+                  line__6="start: -10 2 0; end: -18 14 0; color: white; opacity:0.3"
+                  line__7="start: -10 2 0; end: -36 -8 0; color: white; opacity:0.3"
+                  line__8="start: -2.8 -14.4 0; end: 6 -6.4 0; color: white; opacity:0.3"
+                  ></a-entity>
+
+                <a-image src="/img/constellation/Constellation_car.png" width="100" height="60" rotation="0 0 0" position="0 0 0" opacity="0.1" scale="-1 1 1"></a-image>
+              </a-entity>
+            </a-entity>
+
+
+
+
+            <a-entity rotation="10 -90 0" scale="1 1 1">
+              <!-- 별자리 위치-->
+              <a-entity position="0 0 -120.6" scale="1.5 1.5 1.5">
+                  <!-- 별하나에 작품하나 가장 아래-->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="-2.8 -14.4 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star8" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="1" visible="false"></a-box>
+                    <!-- <a-image src="/img/constellation/light.png" width="6" height="6" rotation="0 0 0" position="0 0 1" scale="1 1 1" opacity="0.1" animation="property:opacity; from: 0.1; to:1; dur:3000; dir:alternate;"></a-image> -->
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나2 오른쪽 위-->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="16 -2.4 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star9" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="1" visible="false"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나3 중간-->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="0 -8 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star10" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="1" visible="false"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나4 왼쪽 중앙-->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="-16 -6 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star11" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="1" visible="false"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나5 오른쪽 아래-->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="13 -12 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star12" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="1" visible="false"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나6 왼쪽 위-->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="-13 2 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star13" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="1" visible="false"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나7 손위 -->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="-1 -3 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star14" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="1" visible="false"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나8 왼쪽 아령-->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="-23 -14 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star15" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="1" visible="false"></a-box>
+                  </a-icosahedron>
+
+                  <a-entity
+                  line__1="start: -2.8 -14.4 0; end: 0 -8 0; color: white; opacity:0.3"
+                  line__2="start: 0 -8 0; end: -1 -3 0; color: white; opacity:0.3"
+                  line__3="start: -1 -3 0; end: 16 -2.4 0; color: white; opacity:0.3"
+                  line__4="start: 16 -2.4 0; end: 13 -12 0; color: white; opacity:0.3"
+                  line__5="start: -1 -3 0; end: -16 -6 0; color: white; opacity:0.3"
+                  line__6="start: -16 -6 0; end: -23 -14 0; color: white; opacity:0.3"
+                  line__7="start: -16 -6 0; end: -13 2 0; color: white; opacity:0.3"
+                  ></a-entity>
+
+                <a-image src="/img/constellation/Constellation_health.png" width="40" height="40" rotation="0 0 0" position="0 0 0" opacity="0.1" scale="-1 1 1"></a-image>
+              </a-entity>
+            </a-entity>
+
+
+
+
+
+            <a-entity rotation="20 40 0" scale="1 1 1">
+              <!-- 별자리 위치-->
+              <a-entity position="0 0 -120.6" scale="1.5 1.5 1.5">
+                  <!-- 별하나에 작품하나 가장 아래-->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="0 8 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star16" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="1" visible="false"></a-box>
+                    <!-- <a-image src="/img/constellation/light.png" width="6" height="6" rotation="0 0 0" position="0 0 1" scale="1 1 1" opacity="0.1" animation="property:opacity; from: 0.1; to:1; dur:3000; dir:alternate;"></a-image> -->
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나2 오른쪽 위-->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="12 -2.4 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star17" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="1" visible="false"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나3 중간-->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="0 -8 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star18" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="1" visible="false"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나4 왼쪽 중앙-->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="-16 -6 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star19" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="1" visible="false"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나5 오른쪽 아래-->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="13 -12 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star20" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="1" visible="false"></a-box>
+                  </a-icosahedron>
+
+                  <!-- 별하나에 작품하나6 왼쪽 위-->
+                  <a-icosahedron color="#FFFFFF" radius="1.2" position="-13 2 0">
+                    <!-- 별자리 히트박스 -->
+                    <a-box id="star21" class="star" width="2" height="2" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="1" visible="false"></a-box>
+                  </a-icosahedron>
+
+                  <a-entity
+                  line__1="start: 0w 8 0; end: 12 -2.4 0; color: white; opacity:0.3"
+                  line__2="start: 0 8 0; end: 0 -8 0; color: white; opacity:0.3"
+                  line__3="start: 12 -2.4 0; end: 13 -12 0; color: white; opacity:0.3"
+                  line__4="start: 0 8 0; end: -13 2 0; color: white; opacity:0.3"
+                  line__5="start: -13 2 0; end: -16 -6 0; color: white; opacity:0.3"
+                  ></a-entity>
+
+                <a-image src="/img/constellation/Constellation_robot.png" width="40" height="40" rotation="0 0 0" position="0 0 0" opacity="0.1" scale="-1 1 1"></a-image>
+              </a-entity>
+            </a-entity>
+
+
+            <a-entity rotation="0 30 0" scale="1 1 1">
+              <!-- 별자리 위치-->
+              <a-entity position="0 0 -120.6">
+                  <!-- 별하나에 작품하나 가장 아래-->
+                  <a-icosahedron color="#FFFFFF" radius="1.8" position="0 8 0">
+                    <!-- 별자리 히트박스 -->
+                    <!-- <a-text value="Achieverse" rotation="25 0 0" position="-8 -6 0" width="70" height="70" ></a-text> -->
+                    <a-box id="star22" class="star" width="4" height="4" depth="2" material="color: #e19494" geometry="" scale="2 2 2"  opacity="1" visible="false"></a-box>
+                    <!-- <a-image src="/img/constellation/light.png" width="6" height="6" rotation="0 0 0" position="0 0 1" scale="1 1 1" opacity="0.1" animation="property:opacity; from: 0.1; to:1; dur:3000; dir:alternate;"></a-image> -->
+                  </a-icosahedron>
+              </a-entity>
+            </a-entity>
+          </a-entity>
+      </a-entity>
+
+      
+
+      
+
+
+
+    
+    </a-scene>
+    <script src="data.js"></script>
+    <script src="style.js"></script>
+    <script src="jqeury.js"></script>
+    <script src="sketch.js"></script>
+    <script src="click.js"></script>
+  </body>
+</html>
