@@ -11,12 +11,11 @@ let Constellations = [
 
 $(function () {
     $(document).on("click", function() {
-        $('.preview').slideUp();
     })
 
     let project = $('<div class="box"></div>');
     for(let i = 0; i < 8; ++i){
-        project.append('<div class = "innerstar"/>')
+        project.append(`<div class = "innerstar" data-number="${i}"/>`)
         $('.Constellation').append(project);
         $(`.innerstar:nth-child(${i+1})`).css({'transform':`translate(${Constellations[0].first[i].x}px,${Constellations[0].first[i].y}px)`})
         // $('.Constellation').append(designer);

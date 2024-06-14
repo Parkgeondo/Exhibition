@@ -9,11 +9,7 @@ let rotate = new Array();
 for(i = 0; i < database.length; i++){
     starData[i] = document.querySelector(`#star${i}`)
 }
-
     rotate = document.querySelector(`#rotate`)
-
-
-console.log(starData)
 
 function sayHi() {
     $('.tooltip').css('opacity',`1`)
@@ -36,12 +32,11 @@ $(function () {
         two.object3D.visible = !two.object3D.visible
     });
 
-    show()
     let back = document.querySelector('.back');
 
     for(i = 0; i < database.length; i++){
         starData[i].addEventListener('mouseenter',function(){
-            
+            console.log('!!!!!!!!!!!!')
             for(e = 0; e < database.length; e++){
                 if(String($(this).prop('id')) == `star${e}`){
                     //미리보기 작가 이름
@@ -58,10 +53,7 @@ $(function () {
 
             rotate.setAttribute("animation","dur:100000000")
             hover = true;
-            show();
-            // $('.name').text('sogeun sogeun')
-            // $('.Dname').text('김채원')
-            console.log(i)
+            show2();
         })
 
         
@@ -94,23 +86,21 @@ $(function () {
                 }
 
             }
-
-            //툴팁 잠시 올라가는?
             setTimeout(sayHi, 10);
         })
 
         
         starData[i].addEventListener('mouseleave',function(){
+            console.log('??!?!?!?!!?')
             rotate.setAttribute("animation","dur:250000;")
             hover = false;
-            show();
+            show2();
         })
     
         starData[i].addEventListener('click',function(){
             click = true;
             modal();
             $(`.innerstar:nth-child(4)::after`).on('click',function(){
-                console.log("ASDSDA");
             })
         })
         
@@ -119,7 +109,6 @@ $(function () {
             modal();
             for(i = 0; i < database.length; i++){
                 $(`.innerstar:nth-child(${i+1})`).removeClass('twinkle')
-                console.log("ASdds")
             }
             $('.tooltip').css('opacity',`0`)
             $('.tooltip').css('top',`280px`)
@@ -145,11 +134,12 @@ $(function () {
 
 })
 
-function show(){
+function show2(){
+    console.log(hover)
     if(hover){
         $('.preview').stop(true).delay(200).slideDown();
-    }else{
-        $('.preview').stop(true).slideUp();
+    }else if(!hover){
+        $('.preview').stop(true).delay(200).slideUp();
     }
 }
 
